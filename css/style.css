@@ -1,0 +1,445 @@
+*, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  color: #252829;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.fit-w {
+  width: 100%;
+}
+
+.max-w {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
+.ani {
+  animation: slide 1s ease-out;
+}
+
+@keyframes slide {
+  0% {
+    left: -30%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    left: 0;
+  }
+}
+nav.nav-h {
+  height: 55px;
+}
+nav.main-nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #4e7e64;
+}
+nav.main-nav div.nav-inside {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav.main-nav div.nav-inside img {
+  max-height: 35px;
+  margin-left: 5px;
+  transform-origin: center;
+  transition: 0.5s ease-out;
+}
+nav.main-nav div.nav-inside div.relleno {
+  height: 35px;
+  width: 35px;
+  padding-right: 5px;
+}
+nav.main-nav div.nav-inside h1 {
+  color: white;
+}
+
+.half {
+  /*height: 50%;
+  */
+  /*en horizontal width 50%*/
+}
+
+main.landing {
+  height: calc(100vh - 55px);
+}
+main.landing div.landing-inside {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main.landing div.landing-inside div.landing-pic {
+  flex-grow: 2;
+  position: relative;
+  /*
+  transition: 1s ease;
+  left: -200px;*/
+}
+main.landing div.landing-inside div.landing-pic img {
+  max-width: 100%;
+  max-height: 400px;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+main.landing div.landing-inside div.cta {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main.landing div.landing-inside div.cta h2.cta-text {
+  color: black;
+}
+main.landing div.landing-inside div.cta button.button-cta {
+  padding: 0.7rem;
+  border: none;
+  background-color: #4e7e64;
+}
+main.landing div.landing-inside div.cta button.button-cta h1.button-text {
+  font-family: serif;
+  color: white;
+  font-size: 1.4rem;
+  padding: 0 1.4rem;
+}
+
+div.container .titulo {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: black;
+  font-size: 1.6rem;
+}
+div.container section {
+  padding: 1rem;
+}
+div.container section.about-us div.half.uno {
+  margin-bottom: 1rem;
+}
+div.container section.about-us div.half.dos img {
+  width: 100%;
+}
+div.container section.our-models {
+  width: 100%;
+  margin: 3rem auto;
+}
+div.container section.our-models div.models {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+div.container section.our-models div.model {
+  border-radius: 7px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+  min-width: 200px;
+}
+div.container section.our-models div.model div.model-picture {
+  position: relative;
+  padding-top: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-image: url(../img/bike2.jpg);
+  height: 100%;
+  width: 100%;
+}
+div.container section.our-models div.model p.model-description {
+  margin: 0.5rem 0;
+  font-weight: 300;
+  font-size: 1rem;
+}
+div.container section.our-models div.model .model-name {
+  text-align: center;
+  color: black;
+}
+div.container section.our-models div.model button.model-buy {
+  text-align: center;
+  padding: 0.5rem;
+  box-shadow: none;
+  border: none;
+  background-color: #4e7e64;
+  border: 1px solid #4e7e64;
+  color: #4e7e64;
+  border-radius: 5px;
+  font-family: sans-serif;
+  color: white;
+}
+div.container section.our-models div.model p.model-description {
+  text-align: center;
+}
+div.container section.our-models div.model img.model-image {
+  width: 100%;
+  padding: 0 0.5rem;
+}
+div.container section.our-models div.model div.price {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #4e7e64;
+  padding: 0.15rem;
+  font-weight: 800;
+  color: white;
+  border-radius: 5%;
+}
+div.container section.materials {
+  margin: 3rem auto;
+  padding: 2rem 1rem;
+  background-color: #4e7e64;
+  color: white;
+}
+div.container section.materials h2.titulo {
+  color: white;
+}
+div.container section.materials div.avd {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+div.container section.materials div.avd div.check-marker {
+  text-align: center;
+  max-width: 250px;
+  min-width: 200px;
+  margin-bottom: 1rem;
+}
+div.container section.materials div.avd div.check-marker h3 {
+  font-size: 1.25em;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+}
+div.container section.materials div.avd div.check-marker p {
+  color: #eee;
+  font-weight: 500;
+}
+div.container section.materials div.avd div.check-marker img {
+  width: 80%;
+}
+div.container section.materials div.avd div.check-marker:last-child {
+  margin-bottom: 0;
+}
+div.container section.testimonial h2.titulo span.ts {
+  color: #4e7e64;
+}
+div.container section.testimonial div.testimonial-content div.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div.container section.testimonial div.testimonial-content img.testimonial-img {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+div.container section.testimonial div.testimonial-content p.test {
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+div.container section.testimonial div.testimonial-content p.test::before, div.container section.testimonial div.testimonial-content p.test::after {
+  content: '"';
+  position: relative;
+  font-size: 1.7rem;
+  line-height: 1;
+  font-family: serif;
+}
+div.container footer {
+  background-color: #1d1d1d;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: space-between;
+}
+div.container footer div.link-section {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+div.container footer div.link-section p.links-text {
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #e6e6e6;
+  margin-bottom: 0.25rem;
+}
+div.container footer div.link-section ul li {
+  list-style: none;
+}
+div.container footer div.link-section ul li a {
+  text-decoration: none;
+  color: #a7a7a7;
+  font-size: 0.9rem;
+}
+div.container footer div.link-section.socials ul li {
+  display: inline-block;
+}
+div.container footer div.link-section.socials ul li a {
+  text-decoration: none;
+  margin-right: 0.25rem;
+}
+div.container footer div.link-section.socials ul li a img {
+  width: 19px;
+}
+
+/* index 2 */
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  cursor: pointer;
+  width: 340px;
+  height: 340px;
+}
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.anim {
+  transition: transform 0.6s linear;
+}
+
+.front img {
+  height: 100%;
+}
+
+.front {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.back {
+  background-color: #f1f1f1;
+  transform: perspective(200px) rotateY(180deg);
+}
+
+.card:hover > .front {
+  transform: perspective(200px) rotateY(-180deg);
+}
+
+.card:hover > .back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+@media only screen and (min-width: 700px), (orientation: landscape) {
+  .hide {
+    display: block;
+  }
+
+  main.landing div.landing-inside {
+    flex-direction: row;
+  }
+  main.landing div.landing-inside div.half {
+    width: 50%;
+  }
+  main.landing div.landing-inside div.half.cta {
+    display: flex;
+    flex-direction: column;
+  }
+  main.landing div.landing-inside div.half.cta h2 {
+    text-align: center;
+  }
+  main.landing div.landing-inside div.half.cta h2.cta-text {
+    margin: 0 0.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+  main.landing div.landing-inside div.half.cta button.button-cta {
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+
+  div.container section.about-us {
+    display: flex;
+  }
+  div.container section.about-us div.half {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  div.container section.about-us div.half p {
+    font-size: 1.4rem;
+    padding-right: 1rem;
+    line-height: 1.5;
+  }
+  div.container section.our-models {
+    width: 100%;
+  }
+  div.container section.our-models div.models {
+    flex-direction: row;
+    justify-content: center;
+  }
+  div.container section.our-models div.models div.model {
+    width: 45%;
+    max-width: 500px;
+  }
+  div.container section.materials div.avd {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  div.container section.materials div.avd div.check-marker {
+    margin-bottom: 0;
+    width: 30%;
+  }
+  div.container section.materials div.avd div.check-marker img.check {
+    max-width: 200px;
+  }
+  div.container section.testimonial .testimonial-content {
+    display: flex;
+  }
+  div.container section.testimonial .testimonial-content .testimonial-img, div.container section.testimonial .testimonial-content .text {
+    width: 50%;
+  }
+  div.container section.testimonial .testimonial-content .text {
+    margin-left: 1rem;
+  }
+  div.container footer div.link-section {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 1040px) {
+  div.container section.our-models div.models div.model {
+    width: 30%;
+    max-width: 500px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
