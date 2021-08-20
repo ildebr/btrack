@@ -24,7 +24,7 @@ html {
 
 .max-w {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -55,7 +55,8 @@ nav.main-nav {
   position: fixed;
   top: 0;
   z-index: 1;
-  background-color: #4e7e64;
+  background-color: white;
+  box-shadow: 0px -1px 7px #4e7e64;
 }
 nav.main-nav div.nav-inside {
   height: 100%;
@@ -75,7 +76,7 @@ nav.main-nav div.nav-inside div.relleno {
   padding-right: 5px;
 }
 nav.main-nav div.nav-inside h1 {
-  color: white;
+  color: #4e7e64;
 }
 
 .half {
@@ -121,10 +122,88 @@ main.landing div.landing-inside div.cta button.button-cta {
   background-color: #4e7e64;
 }
 main.landing div.landing-inside div.cta button.button-cta h1.button-text {
-  font-family: serif;
+  font-family: sans-serif;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   padding: 0 1.4rem;
+}
+main.landing .half#landing-2 {
+  padding: 1rem;
+}
+main.landing .half#landing-2 div.form-container {
+  box-shadow: -3px 3px 9px #bbb;
+  border-radius: 10px;
+}
+main.landing .half#landing-2 div.form-title {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  background-color: #4e7e64;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main.landing .half#landing-2 div.form-title h2 {
+  padding: 0.75rem 0;
+  color: white;
+}
+main.landing .half#landing-2 form {
+  padding: 1rem;
+}
+main.landing .half#landing-2 form:before {
+  content: "alo";
+  background-color: blue;
+  width: 100%;
+  height: 60px;
+  display: block;
+  display: none;
+  box-shadow: -3px 3px 9px #bbb;
+}
+main.landing .half#landing-2 form fieldset {
+  padding: 1rem 0;
+  border: none;
+}
+main.landing .half#landing-2 form fieldset div.form-group {
+  margin-bottom: 1rem;
+}
+main.landing .half#landing-2 form fieldset div.form-group label {
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+main.landing .half#landing-2 form fieldset div.form-group.s-row {
+  width: 49%;
+  display: inline-block;
+}
+main.landing .half#landing-2 form fieldset div.form-group label input {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin-top: 0.25rem;
+}
+main.landing .half#landing-2 form fieldset div.form-group label abbr {
+  display: none;
+}
+main.landing .half#landing-2 form fieldset div.form-group label span {
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+main.landing .half#landing-2 form fieldset div.form-group div.controls select#country {
+  margin-top: 0.25rem;
+  width: 100%;
+  height: 30px;
+}
+main.landing .half#landing-2 form fieldset button {
+  border: none;
+  padding: 15px;
+  background-color: #4e7e64;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 div.container .titulo {
@@ -135,6 +214,51 @@ div.container .titulo {
 }
 div.container section {
   padding: 1rem;
+}
+div.container section.about-us {
+  display: flex;
+  background-color: #4e7e6426;
+}
+div.container section.about-us div.half {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div.container section.about-us div.half h2 {
+  font-size: 1.6rem;
+  padding-right: 1rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+div.container section.about-us div.half p {
+  color: #666;
+}
+div.container section.about-us div.half.dos {
+  padding: 1rem;
+  display: none;
+}
+div.container section.about-us div.half.uno {
+  padding: 1rem;
+}
+div.container section.about-us div.half.uno ul.good-points li {
+  padding: 7.5px 1rem;
+  border: 2px solid #4e7e64;
+  border-radius: 30px;
+  list-style: none;
+  margin-bottom: 1.25rem;
+}
+div.container section.about-us div.half.uno ul.good-points li:first-of-type {
+  margin-top: 1rem;
+}
+div.container section.about-us div.half.uno ul.good-points li img.icon {
+  height: 18px;
+  display: inline;
+  margin-right: 1rem;
+}
+div.container section.about-us div.half.uno ul.good-points li p {
+  display: inline;
+  font-weight: 200;
+  color: black;
 }
 div.container section.about-us div.half.uno {
   margin-bottom: 1rem;
@@ -214,39 +338,40 @@ div.container section.our-models div.model div.price {
 div.container section.materials {
   margin: 3rem auto;
   padding: 2rem 1rem;
-  background-color: #4e7e64;
-  color: white;
-}
-div.container section.materials h2.titulo {
-  color: white;
 }
 div.container section.materials div.avd {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  gap: 1rem;
 }
 div.container section.materials div.avd div.check-marker {
   text-align: center;
   max-width: 250px;
   min-width: 200px;
   margin-bottom: 1rem;
+  border: 2px solid #4e7e64;
+  border-radius: 10px;
+  padding: 1rem;
 }
 div.container section.materials div.avd div.check-marker h3 {
   font-size: 1.25em;
   margin-bottom: 0.25rem;
   margin-top: 0.25rem;
+  text-transform: uppercase;
 }
 div.container section.materials div.avd div.check-marker p {
-  color: #eee;
-  font-weight: 500;
+  color: gray;
+  font-weight: 200;
 }
 div.container section.materials div.avd div.check-marker img {
   width: 80%;
 }
 div.container section.materials div.avd div.check-marker:last-child {
   margin-bottom: 0;
+}
+div.container section.testimonial {
+  background-color: #4e7e6426;
 }
 div.container section.testimonial h2.titulo span.ts {
   color: #4e7e64;
@@ -359,6 +484,11 @@ div.container footer div.link-section.socials ul li a img {
 }
 
 @media only screen and (min-width: 700px), (orientation: landscape) {
+  main.landing {
+    height: auto;
+    padding: 4rem 0;
+  }
+
   .hide {
     display: block;
   }
@@ -387,6 +517,7 @@ div.container footer div.link-section.socials ul li a img {
 
   div.container section.about-us {
     display: flex;
+    background-color: #4e7e6426;
   }
   div.container section.about-us div.half {
     width: 50%;
@@ -394,10 +525,39 @@ div.container footer div.link-section.socials ul li a img {
     flex-direction: column;
     justify-content: center;
   }
-  div.container section.about-us div.half p {
-    font-size: 1.4rem;
+  div.container section.about-us div.half h2 {
+    font-size: 1.6rem;
     padding-right: 1rem;
-    line-height: 1.5;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+  div.container section.about-us div.half p {
+    color: #666;
+  }
+  div.container section.about-us div.half.uno {
+    padding: 1rem;
+  }
+  div.container section.about-us div.half.uno ul.good-points li {
+    padding: 7.5px 1rem;
+    border: 2px solid #4e7e64;
+    border-radius: 30px;
+    list-style: none;
+    margin-bottom: 1.25rem;
+  }
+  div.container section.about-us div.half.uno ul.good-points li:first-of-type {
+    margin-top: 1rem;
+  }
+  div.container section.about-us div.half.uno ul.good-points li img.icon {
+    height: 18px;
+    display: inline;
+  }
+  div.container section.about-us div.half.uno ul.good-points li p {
+    display: inline;
+    font-weight: 200;
+    color: black;
+  }
+  div.container section.about-us div.half.dos {
+    display: flex;
   }
   div.container section.our-models {
     width: 100%;
@@ -417,13 +577,14 @@ div.container footer div.link-section.socials ul li a img {
   }
   div.container section.materials div.avd div.check-marker {
     margin-bottom: 0;
-    width: 30%;
+    max-width: 25%;
   }
   div.container section.materials div.avd div.check-marker img.check {
     max-width: 200px;
   }
   div.container section.testimonial .testimonial-content {
     display: flex;
+    padding: 0 1rem;
   }
   div.container section.testimonial .testimonial-content .testimonial-img, div.container section.testimonial .testimonial-content .text {
     width: 50%;
