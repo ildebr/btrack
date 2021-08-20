@@ -35,7 +35,7 @@ $(window).resize(function(){
     if(width <= 449){
         $("div.landing-pic img").attr("src", ori);
     } else if (width >= 450){
-        $("div.landing-pic img").attr("src", "img/bike2.jpg");
+        $("div.landing-pic img").attr("src", "img/bike1.jpg");
     }
 });
 
